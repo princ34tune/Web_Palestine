@@ -1,0 +1,89 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+article, aside {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+aside {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Style for Galeri */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space for each images */
+  justify-content: center; /* arrange images in the center */
+}
+
+.gallery img {
+  width: 200px; /* same width for each images */
+  height: auto;
+  object-fit: cover; /* same proportional */
+  border-radius: 5px; /* giving border in each images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* giving shadows */
+  transition: transform 0.3s ease; /* transitions when hovering */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* zoom when hovering */
+}

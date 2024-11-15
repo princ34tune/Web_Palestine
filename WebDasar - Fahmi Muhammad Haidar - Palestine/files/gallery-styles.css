@@ -1,0 +1,20 @@
+/* Style for Galeri */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space for each images */
+  justify-content: center; /* arrange images in the center */
+}
+
+.gallery img {
+  width: 200px; /* same width for each images */
+  height: auto;
+  object-fit: cover; /* same proportional */
+  border-radius: 5px; /* giving border in each images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* giving shadows */
+  transition: transform 0.3s ease; /* transitions when hovering */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* zoom when hovering */
+}
